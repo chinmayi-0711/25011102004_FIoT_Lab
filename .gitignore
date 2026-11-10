@@ -1,55 +1,49 @@
-# Prerequisites
-*.d
+# Keil generated listing files
+**/Listings/
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Keil generated object and build files
+**/Objects/*.obj
+**/Objects/*.lst
+**/Objects/*.m51
+**/Objects/*.abs
+**/Objects/*.omf
+**/Objects/*.lnp
+**/Objects/*.build_log.htm
+**/Objects/*.crf
+**/Objects/*.dep
 
-# Linker output
-*.ilk
-*.map
-*.exp
+# User-specific Keil settings
+**/*.uvgui
+**/*.uvgui.*
+**/*.uvguix*
+**/*.uvopt
+**/*.uvoptx
 
-# Precompiled Headers
-*.gch
-*.pch
+# Generated intermediate build files
+**/*.axf
+**/*.o
+**/*.d
+**/*.dep
+**/*.map
+**/*.elf
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+# Generated build directories
+**/Debug/
+**/Release/
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+# STM32CubeIDE generated build directory
+**/STM32CubeIDE/Debug/
+**/STM32CubeIDE/Release/
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+# Operating system files
+Thumbs.db
+Desktop.ini
+.DS_Store
 
-# Debug files
-*.dSYM/
-*.su
-*.idb
-*.pdb
+# Editor and temporary files
+*.bak
+*.tmp
+*~
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
-
-# debug information files
-*.dwo
+# Keep source code, circuit diagrams, .ioc files,
+# project configuration files and .hex firmware files tracked
