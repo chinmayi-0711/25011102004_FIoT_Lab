@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+"shortpress_longpress\startup_stm32f401xe.o"
+"shortpress_longpress\main.o"
+"shortpress_longpress\stm32f4xx_it.o"
+"shortpress_longpress\stm32f4xx_hal_msp.o"
+"shortpress_longpress\stm32f4xx_hal_rcc.o"
+"shortpress_longpress\stm32f4xx_hal_rcc_ex.o"
+"shortpress_longpress\stm32f4xx_hal_flash.o"
+"shortpress_longpress\stm32f4xx_hal_flash_ex.o"
+"shortpress_longpress\stm32f4xx_hal_flash_ramfunc.o"
+"shortpress_longpress\stm32f4xx_hal_gpio.o"
+"shortpress_longpress\stm32f4xx_hal_dma_ex.o"
+"shortpress_longpress\stm32f4xx_hal_dma.o"
+"shortpress_longpress\stm32f4xx_hal_pwr.o"
+"shortpress_longpress\stm32f4xx_hal_pwr_ex.o"
+"shortpress_longpress\stm32f4xx_hal_cortex.o"
+"shortpress_longpress\stm32f4xx_hal.o"
+"shortpress_longpress\stm32f4xx_hal_exti.o"
+"shortpress_longpress\system_stm32f4xx.o"
+--strict --scatter "shortpress_longpress\shortpress_longpress.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "shortpress_longpress.map" -o shortpress_longpress\shortpress_longpress.axf
