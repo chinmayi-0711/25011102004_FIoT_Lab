@@ -32,7 +32,7 @@
 
 ## Circuit Diagram
 
-![Circuit diagram: P1.0 to resistor to LED to GND](circuit.svg)
+![Circuit diagram: P1.0 to resistor to LED to GND](circuit.jpeg)
 
 The circuit consists of an AT89S52 microcontroller connected to an LED through Port 1, Pin 0 (P1.0). The LED is controlled by directly accessing the GPIO port using the 8051 SFR interface.
 
