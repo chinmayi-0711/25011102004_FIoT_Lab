@@ -18,11 +18,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "string.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include <string.h>
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -68,100 +67,95 @@ static void MX_USART2_UART_Init(void);
   */
 int main(void)
 {
-    char at_cmd[] = "AT\r\n";
-    char mode[] = "AT+CWMODE=1\r\n";
-    char dhcp[] = "AT+CWDHCP=1,1\r\n";
-    char authenticate[] =
-        "AT+CWJAP=\"YOUR_WIFI_SSID\",\"YOUR_WIFI_PASSWORD\"\r\n";
-    char details[] = "AT+CIFSR\r\n";
-    char mux[] = "AT+CIPMUX=1\r\n";
-    char httpserver[] = "AT+CIPSERVER=1,80\r\n";
 
-    uint8_t receive;
+  /* USER CODE BEGIN 1 */
 
-    HAL_Init();
-    SystemClock_Config();
-    MX_GPIO_Init();
-    MX_USART1_UART_Init();
-    MX_USART2_UART_Init();
+  /* USER CODE END 1 */
 
-    // 1. Check modem response
-    HAL_UART_Transmit(&huart1, (uint8_t*)at_cmd, 4, HAL_MAX_DELAY);
+  /* MCU Configuration--------------------------------------------------------*/
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
+  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
+  HAL_Init();
 
-    HAL_Delay(500);
+  /* USER CODE BEGIN Init */
 
-    // 2. Configure station mode
-    HAL_UART_Transmit(&huart1, (uint8_t*)mode, strlen(mode), HAL_MAX_DELAY);
+  /* USER CODE END Init */
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
+  /* Configure the system clock */
+  SystemClock_Config();
 
-    HAL_Delay(500);
+  /* USER CODE BEGIN SysInit */
 
-    // 3. Enable DHCP
-    HAL_UART_Transmit(&huart1, (uint8_t*)dhcp, strlen(dhcp), HAL_MAX_DELAY);
+  /* USER CODE END SysInit */
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
+  /* Initialize all configured peripherals */
+  MX_GPIO_Init();
+  MX_USART1_UART_Init();
+  MX_USART2_UART_Init();
+  /* USER CODE BEGIN 2 */
+	
+	uint8_t ch;
 
-    HAL_Delay(500);
+ 
+  char cmd1[] = "AT\r\n";
+  HAL_UART_Transmit(&huart1, (uint8_t *)cmd1, strlen(cmd1), HAL_MAX_DELAY);
+  while (HAL_UART_Receive(&huart1, &ch, 1, 100) == HAL_OK)
+  {
+    HAL_UART_Transmit(&huart2, &ch, 1, HAL_MAX_DELAY);
+  }
+  HAL_Delay(500);
 
-    // 4. Connect to Wi-Fi access point
-    HAL_UART_Transmit(&huart1, (uint8_t*)authenticate,
-                      strlen(authenticate), HAL_MAX_DELAY);
+  
+  char cmd2[] = "AT+CWMODE=1\r\n";
+  HAL_UART_Transmit(&huart1, (uint8_t *)cmd2, strlen(cmd2), HAL_MAX_DELAY);
+  while (HAL_UART_Receive(&huart1, &ch, 1, 100) == HAL_OK)
+  {
+    HAL_UART_Transmit(&huart2, &ch, 1, HAL_MAX_DELAY);
+  }
+  HAL_Delay(500);
+	
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 5000) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
+  char cmd5[] = "AT+CWDHCP=1,1\r\n";
+  HAL_UART_Transmit(&huart1, (uint8_t *)cmd5, strlen(cmd5), HAL_MAX_DELAY);
+  while (HAL_UART_Receive(&huart1, &ch, 1, 100) == HAL_OK)
+  {
+    HAL_UART_Transmit(&huart2, &ch, 1, HAL_MAX_DELAY);
+  }
+  HAL_Delay(500);
 
-    HAL_Delay(500);
+  
+  char cmd3[] = "AT+CWJAP=\"SNUC\",\"snu12345\"\r\n";
+  HAL_UART_Transmit(&huart1, (uint8_t *)cmd3, strlen(cmd3), HAL_MAX_DELAY);
+  while (HAL_UART_Receive(&huart1, &ch, 1, 5000) == HAL_OK)
+  {
+    HAL_UART_Transmit(&huart2, &ch, 1, HAL_MAX_DELAY);
+  }
+  HAL_Delay(500);
 
-    // 5. Obtain IP address information
-    HAL_UART_Transmit(&huart1, (uint8_t*)details,
-                      strlen(details), HAL_MAX_DELAY);
+  char cmd4[] = "AT+CIFSR\r\n";
+  HAL_UART_Transmit(&huart1, (uint8_t *)cmd4, strlen(cmd4), HAL_MAX_DELAY);
+  while (HAL_UART_Receive(&huart1, &ch, 1, 100) == HAL_OK)
+  {
+    HAL_UART_Transmit(&huart2, &ch, 1, HAL_MAX_DELAY);
+  }
+  HAL_Delay(500);
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
 
-    HAL_Delay(500);
+  /* USER CODE END 2 */
 
-    // 6. Enable multiple connections
-    HAL_UART_Transmit(&huart1, (uint8_t*)mux, strlen(mux), HAL_MAX_DELAY);
+  /* Infinite loop */
+  /* USER CODE BEGIN WHILE */
+  while (1)
+  {
+    /* USER CODE END WHILE */
 
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
-
-    HAL_Delay(500);
-
-    // 7. Start HTTP server on port 80
-    HAL_UART_Transmit(&huart1, (uint8_t*)httpserver,
-                      strlen(httpserver), HAL_MAX_DELAY);
-
-    while (HAL_UART_Receive(&huart1, &receive, 1, 100) == HAL_OK)
-    {
-        HAL_UART_Transmit(&huart2, &receive, 1, HAL_MAX_DELAY);
-    }
-
-    HAL_Delay(500);
-
-    while (1)
-    {
-    }
+    /* USER CODE BEGIN 3 */
+		
+		
+  }
+  /* USER CODE END 3 */
 }
+
 /**
   * @brief System Clock Configuration
   * @retval None
