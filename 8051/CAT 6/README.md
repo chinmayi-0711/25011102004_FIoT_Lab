@@ -56,11 +56,11 @@ Receive characters from the PC terminal and transmit the same characters back th
 
 ### Task 1 – UART Transmission
 
-[Circuit Diagram](Task1/circuit.jpeg)
+[Circuit Diagram](TASK1/circuit.jpeg)
 
 ### Task 2 – UART Echo
 
-[Circuit Diagram](Task2/circuit.jpeg)
+[Circuit Diagram](TASK2/circuit.jpeg)
 
 ### Hardware Connections
 
