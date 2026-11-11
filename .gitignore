@@ -1,3 +1,4 @@
+
 # Keil generated listing files
 **/Listings/
 
@@ -31,19 +32,9 @@
 **/Debug/
 **/Release/
 
-# STM32CubeIDE generated build directory
-**/STM32CubeIDE/Debug/
-**/STM32CubeIDE/Release/
-
 # Operating system files
 Thumbs.db
 Desktop.ini
 .DS_Store
 
-# Editor and temporary files
-*.bak
-*.tmp
-*~
-
-# Keep source code, circuit diagrams, .ioc files,
-# project configuration files and .hex firmware files tracked
+# Keep .hex firmware files tracked
