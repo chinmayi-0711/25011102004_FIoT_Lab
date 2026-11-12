@@ -33,6 +33,6 @@ Clock configuration in CubeMX: select the clock source (HSE bypass or HSI), set 
 |------|--------|-------------|
 | Task 12A – On-board LED Bring-Up | [TASK1/](TASK1/) | Blink the on-board LED at a fixed interval |
 | Task 12B – Switch Control with State Remembrance | [TASK2/](TASK2/) | Each valid press toggles the LED; state is kept after release |
-| Task 12C – Short-Press and Long-Press Detection | [TASKC3/](TASK3/) | Different actions for short and long presses |
+| Task 12C – Short-Press and Long-Press Detection | [TASK3/](TASK3/) | Different actions for short and long presses |
 
 Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.png` and the project files.
