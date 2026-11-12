@@ -26,7 +26,7 @@ Configure a UART with STM32CubeMX and HAL, establish communication between the S
 
 | Task | Folder | Description |
 |------|--------|-------------|
-| Task 9A – Basic UART Communication | [TASKA_Basic_UART_Communication/](TASKA_Basic_UART_Communication/) | Transmit a character repeatedly; receive and echo every character |
-| Task 9B – String-Based Application Logic | [TASKB_UART_Command_LED/](TASKB_UART_Command_LED/) | `LED ON` / `LED OFF` / `LED TOGGLE` commands, plus CR/LF investigation |
+| Task 9A – Basic UART Communication | [TASK1/](TASK1/) | Transmit a character repeatedly; receive and echo every character |
+| Task 9B – String-Based Application Logic | [TASK2/](TASK2/) | `LED ON` / `LED OFF` / `LED TOGGLE` commands, plus CR/LF investigation |
 
 Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.png` and the project files.
