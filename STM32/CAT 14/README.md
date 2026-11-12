@@ -14,7 +14,9 @@ As a continuation of CAT13, develop an STM32-based environmental sensing applica
 
 ## 2. Circuit Diagram
 
+<<<<<<< HEAD
 ![Circuit Diagram](circuit.jpg)
+
 
 **Pin Connections:**
 
