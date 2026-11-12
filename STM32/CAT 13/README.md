@@ -14,7 +14,7 @@ Develop an STM32-based environmental sensing application that interfaces a BME28
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 
