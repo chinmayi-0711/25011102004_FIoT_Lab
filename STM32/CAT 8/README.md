@@ -16,8 +16,8 @@ Bring up the STM32 toolchain (CubeMX + Keil MDK) and interface a push-button and
 
 | Task | Folder | Description |
 |------|--------|-------------|
-| Task 8A – GPIO Input/Output | [TASKA_GPIO_Input_Output/](TASKA_GPIO_Input_Output/) | LED follows the switch state |
-| Task 8B – Event-Based Control | [TASKB_Event_Based_Control/](TASKB_Event_Based_Control/) | Each valid press toggles the LED (debounced) |
-| Task 8C – Short Press vs Long Press | [TASKC_Short_vs_Long_Press/](TASKC_Short_vs_Long_Press/) | < 1 s toggles, ≥ 1 s enters blinking mode, non-blocking |
+| Task 8A – GPIO Input/Output | [TASK8A/](TASK8A/) | LED follows the switch state |
+| Task 8B – Event-Based Control | [TASK8B/](TASK8B/) | Each valid press toggles the LED (debounced) |
+| Task 8C – Short Press vs Long Press | [TASK8C/](TASK8C/) | < 1 s toggles, ≥ 1 s enters blinking mode, non-blocking |
 
-Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.png` and the project files.
+Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.jpeg` and the project files.

@@ -25,8 +25,8 @@ Interface an STM32 board with a Wemos D1 Mini (ESP8266) through UART, configure 
 
 | Task | Folder | Description |
 |------|--------|-------------|
-| Task 10A – STM32 ↔ Wemos UART Communication | [TASKA_STM32_Wemos_UART/](TASKA_STM32_Wemos_UART/) | Send `AT\r\n`, receive `OK` and display it on the PC terminal |
-| Task 10B – Explore the ESP8266 AT Command Interface | [TASKB_AT_Command_Exploration/](TASKB_AT_Command_Exploration/) | Command investigation table for modem, Wi-Fi and TCP commands |
-| Task 10C – Connect Wemos to Wi-Fi | [TASKC_Connect_to_WiFi/](TASKC_Connect_to_WiFi/) | Station mode, join AP, report mode / status / IP |
+| Task 10A – STM32 ↔ Wemos UART Communication | [TASK1/](TASK1/) | Send `AT\r\n`, receive `OK` and display it on the PC terminal |
+| Task 10B – Explore the ESP8266 AT Command Interface | [TASK2/](TASK2/) | Command investigation table for modem, Wi-Fi and TCP commands |
+| Task 10C – Connect Wemos to Wi-Fi | [TASK3/](TASK3) | Station mode, join AP, report mode / status / IP |
 
-Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.png` and the project files.
+Each task folder contains its own `README.md` (objective, circuit diagram, core logic and inference), `circuit.jpeg` and the project files.

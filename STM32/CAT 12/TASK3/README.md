@@ -14,7 +14,7 @@ Extend the application to distinguish between a short button press and a long bu
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpg)
 
 **Pin Connections:**
 

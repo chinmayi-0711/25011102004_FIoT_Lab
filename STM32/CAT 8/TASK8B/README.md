@@ -14,7 +14,7 @@ Modify the firmware so that each valid switch press toggles the LED state. Inves
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 

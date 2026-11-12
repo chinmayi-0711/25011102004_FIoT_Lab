@@ -14,7 +14,7 @@ Develop STM32 firmware that configures the Wemos ESP8266 as a Wi-Fi station and 
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 

@@ -22,7 +22,7 @@ Also investigate `'\r'` (Carriage Return) and `'\n'` (Line Feed) using a small t
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 

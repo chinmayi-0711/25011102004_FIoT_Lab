@@ -14,7 +14,7 @@ Classify each button press by how long it is held: short press (< 1 s) toggles t
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 

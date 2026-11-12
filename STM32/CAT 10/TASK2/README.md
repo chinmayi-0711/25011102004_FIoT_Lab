@@ -14,7 +14,7 @@ Using the ESP8266 AT-command documentation, work out which command satisfies eac
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.png)
+![Circuit Diagram](circuit.jpeg)
 
 **Pin Connections:**
 
