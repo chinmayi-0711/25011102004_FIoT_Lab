@@ -59,15 +59,15 @@ Interface a keypad with the 8051 and move the character A across the 16×2 LCD b
 
 ### Task 1 – LCD Initialization and Character/String Display
 
-[Circuit Diagram](TASK1/circuit.jpeg)
+![Circuit Diagram](TASK1/circuit.jpeg)
 
 ### Task 2 – Cursor Positioning and Dynamic Value Update
 
-[Circuit Diagram](TASK2/circuit.jpeg)
+![Circuit Diagram](TASK2/circuit.jpeg)
 
 ### Task 3 – 4×4 Keypad-Based Character Movement
 
-[Circuit Diagram](TASK3/circuit.jpeg)
+![Circuit Diagram](TASK3/circuit.jpeg)
 
 ## Hardware Connections
 
