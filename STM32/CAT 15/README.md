@@ -57,7 +57,7 @@ The custom library hides the AT commands: it puts the ESP8266 in station mode, j
 
 **Node-RED dashboard flow:**
 
-![Node-RED flow](nodered.jpeg)
+![Node-RED flow](nodered.png)
 
 | Node | Type | Purpose |
 |------|------|---------|
