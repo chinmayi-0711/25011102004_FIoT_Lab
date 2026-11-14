@@ -14,7 +14,7 @@ Develop and program an STM32 application that verifies the NUCLEO-F401RE hardwar
 
 ## 2. Circuit Diagram
 
-![Circuit Diagram](circuit.jpg)
+![Circuit Diagram](cat121.jpg)
 
 **Pin Connections:**
 
