@@ -53,7 +53,7 @@ For example, when the user enters `ABC123` in PuTTY, the AT89S52 receives each c
 
 ## Circuit Diagram
 
-[Circuit Diagram](circuit.jpeg)
+![Circuit Diagram](circuit.jpeg)
 
 The circuit consists of the AT89S52 microcontroller, USB-to-TTL serial converter and PC terminal.
 
