@@ -14,7 +14,7 @@ Using the timer interrupt from Task 1, generate a software PWM signal and gradua
 
 ## 2. Circuit Diagram
 
-![Circuit diagram: ](TASK5A/circuit.jpeg)
+![Circuit diagram: ](TASK5B.1/circuit.jpeg)
 
 **Pin Connections:**
 
