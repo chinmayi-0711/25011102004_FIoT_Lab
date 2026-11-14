@@ -14,7 +14,7 @@ Use the timer interrupt to generate the stepping sequence of a stepper motor and
 
 ## 2. Circuit Diagram
 
-<img width="1600" height="1177" alt="circuit" src="https://github.com/user-attachments/assets/f4adaae2-31e1-44f7-8f61-95e64f53aa2c" />
+![Circuit diagram: ](circuit.jpeg)
 
 **Pin Connections:**
 
