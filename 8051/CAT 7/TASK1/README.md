@@ -36,7 +36,7 @@ Clear the display and transmit character data.
 
 LCD Initialization and Character/String Display
 
-[Circuit Diagram](circuit.jpeg)
+![Circuit Diagram](circuit.jpeg)
 
 ## Hardware Connections
 

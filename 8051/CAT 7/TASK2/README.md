@@ -47,7 +47,7 @@ Update the LCD contents dynamically.
 
 Cursor Positioning and Dynamic Value Update
 
-[Circuit Diagram](circuit.jpeg)
+![Circuit Diagram](circuit.jpeg)
 
 ## Hardware Connections
 

@@ -49,7 +49,7 @@ Configure the AT89S52 UART for 9600-8-N-1 asynchronous serial communication and 
 
 ## Circuit Diagram
 
-[Circuit Diagram](circuit.jpeg)
+![Circuit Diagram](circuit.jpeg)
 
 The circuit consists of the AT89S52 microcontroller, USB-to-TTL serial converter and PC terminal.
 

@@ -50,7 +50,7 @@ Maintain row and column boundaries to prevent movement outside the LCD.
 
 4×4 Keypad-Based Character Movement
 
-[Circuit Diagram](circuit.jpeg)
+![Circuit Diagram](circuit.jpeg)
 
 ## Hardware Connections
 
