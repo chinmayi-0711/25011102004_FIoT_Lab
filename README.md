@@ -28,23 +28,24 @@ Each experiment has its own documentation, including its objective, hardware set
 25011102004_FIoT_Lab/
 │
 ├── 8051/
-│   ├── CAT1/
-│   ├── CAT2/
-│   ├── CAT3/
-│   ├── CAT4/
-│   ├── CAT5/
-│   ├── CAT6/
-│   ├── CAT7/
+│   ├── CAT 1/
+│   ├── CAT 2/
+│   ├── CAT 3/
+│   ├── CAT 4/
+│   ├── CAT 5/
+│   ├── CAT 6/
+│   ├── CAT 7/
 │   └── README.md
 │
 ├── STM32/
-│   ├── CAT8/
-│   ├── CAT9/
-│   ├── CAT10/
-│   ├── CAT11/
-│   ├── CAT12/
-│   ├── CAT13/
-│   ├── CAT14/
+│   ├── CAT 8/
+│   ├── CAT 9/
+│   ├── CAT 10/
+│   ├── CAT 11/
+│   ├── CAT 12/
+│   ├── CAT 13/
+│   ├── CAT 14/
+|   ├── CAT 15/
 │   └── README.md
 │
 ├── .gitignore
