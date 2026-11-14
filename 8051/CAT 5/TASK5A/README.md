@@ -14,7 +14,9 @@ Configure Timer 0 to generate a precise periodic interrupt. Use the timer interr
 
 ## 2. Circuit Diagram
 
+
 ![Circuit diagram: ](circuit.jpeg)
+
 
 **Pin Connections:**
 
